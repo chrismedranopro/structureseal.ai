@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #1e6bb8;
+  --color-brand-blue-light: #3d8fd4;
+  --color-brand-orange: #f97316;
+  --color-brand-orange-light: #fb923c;
+  --color-brand-navy: #0a1120;
+  --color-brand-navy-mid: #0d1526;
+  --color-brand-navy-card: #131c2e;
+  --color-brand-navy-elevated: #1a2540;
+}
+
+:root {
+  --brand-blue: #1e6bb8;
+  --brand-blue-light: #3d8fd4;
+  --brand-blue-pale: rgba(30, 107, 184, 0.12);
+  --brand-blue-border: rgba(30, 107, 184, 0.35);
+  --brand-orange: #f97316;
+  --brand-orange-light: #fb923c;
+  --brand-orange-pale: rgba(249, 115, 22, 0.12);
+  --brand-orange-border: rgba(249, 115, 22, 0.35);
+  --brand-navy: #0a1120;
+  --brand-navy-mid: #0d1526;
+  --brand-navy-card: #131c2e;
+  --brand-navy-elevated: #1a2540;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Fixed sidebar width on every route — never flex-shrink */
+.sidebar-root {
+  width: 220px;
+  min-width: 220px;
+  max-width: 220px;
+  flex-shrink: 0;
+}
+
+.sidebar-root.sidebar-root--collapsed {
+  width: 64px;
+  min-width: 64px;
+  max-width: 64px;
+}
