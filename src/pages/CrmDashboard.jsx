@@ -575,7 +575,7 @@ export default function CrmDashboard() {
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 28 }}>
         <div>
           <h1 style={{ fontSize: 22, fontWeight: 700, color: C.text, letterSpacing: "-0.02em" }}>
-            Good morning, {LOGGED_IN_USER.name.split(" ")[0]} 👋
+            Good afternoon, {LOGGED_IN_USER.name.split(" ")[0]} 👋
           </h1>
           <div style={{ fontSize: 13, color: C.textMuted, marginTop: 3 }}>
             {formatDisplayHeaderDate()} · Sydney, NSW ·{" "}
